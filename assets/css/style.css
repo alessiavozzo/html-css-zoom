@@ -38,10 +38,15 @@ nav{
     background-color: var(--bool-dark-bottom-navbar);
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 /* #endregion Common rules */
 
 
-/* debug */
+/* #region debug */
 
 .debug .view-actions{
     background-color: aqua;
@@ -62,26 +67,50 @@ nav{
     border: 1px solid black;
 }
 
+.debug .users-container{    
+    height: 90%;
+}
+
+
+/* #endregion debug */
+
+
+/* #region Speaker-view */
+
+.view-actions{
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+}
+
+.speaker-view, .open-view{
+    border: 1px solid green;
+    margin-right: 0.5rem;
+}
+
+
+
 
 .users-container{
     width: 90%;
     margin: auto;
-    height: 90%;
 }
 
 .row{
     width: 100%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    gap: 0.2rem;    
 }
 
 .user-card{
     width: 100%;
     position: relative;
-    padding: 0.2%;
 }
 
-img{
-    width: 100%;
-    height: 100%;
+.username{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
 }
