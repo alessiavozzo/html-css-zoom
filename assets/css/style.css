@@ -22,26 +22,54 @@
     padding: 0;
 }
 
+body{
+    height: 100vh;
+}
+
+svg{
+    width: 0.8rem;
+}
 
 #site_main{
-    height: 100vh;
+    height: 90%;
     width: 100%;
-    background-color: aqua;
 }
 
 .main-container{
-    height: 90%;
+    height: 100%;
     background-color: var(--bool-darker);
 }
 
+.users-container{    
+    height: 90%;
+}
+
 nav{
-    height: 10%;
     background-color: var(--bool-dark-bottom-navbar);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i{
+    color: var(--bool-lighter);
 }
 
 img{
     width: 100%;
     height: 100%;
+}
+
+#site_footer{    
+    background-color: var(--bool-dark-bottom-navbar);
+    height: 10%;
+    width: 100%;
+}
+
+.text{
+    color: var(--bool-lighter);
+    font-size: 0.9rem;
 }
 
 /* #endregion Common rules */
@@ -68,10 +96,6 @@ img{
     border: 1px solid black;
 }
  */
-.debug .users-container{    
-    height: 90%;
-}
-
 
 /* #endregion debug */
 
@@ -92,6 +116,10 @@ img{
     padding: 0.3rem;
     border-radius: 5px;
 }
+
+/* #endregion Speaker-view */
+
+/* #region cards */
 
 .users-container{
     width: 90%;
@@ -121,3 +149,37 @@ img{
     color: var(--bool-lighter);
     padding: 1.5%;
 }
+
+/* #endregion cards */
+
+
+/* #region footer */
+
+
+#right-actions{
+    color: var(--bool-danger);
+    background-color: var(--bool-dark);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+
+#center-actions, #left-actions{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+
+#left-actions > *, #center-actions > *{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.share i{
+    color: limegreen;
+}
+
+/* #endregion footer */
