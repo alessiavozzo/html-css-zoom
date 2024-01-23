@@ -1,0 +1,24 @@
+/* #region Color palette */
+
+:root{
+    --bool-dark-bottom-navbar:rgba(34, 34, 34, 1);
+    --bool-dark:rgba(74, 74, 74, 1);
+    --bool-lighter: rgba(255, 255, 255, 1);
+    --bool-darker: rgba(0, 0, 0, 1);
+    --bool-danger: red;
+}
+
+/* #endregion Color palette */
+
+/* #region Common rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* #endregion Common rules */
