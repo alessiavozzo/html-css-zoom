@@ -3,6 +3,7 @@
 :root{
     --bool-dark-bottom-navbar:rgba(34, 34, 34, 1);
     --bool-dark:rgba(74, 74, 74, 1);
+    --bool-dark-sheer:rgba(74, 74, 74, 0.596);
     --bool-lighter: rgba(255, 255, 255, 1);
     --bool-darker: rgba(0, 0, 0, 1);
     --bool-danger: red;
@@ -48,25 +49,25 @@ img{
 
 /* #region debug */
 
-.debug .view-actions{
+/* .debug .view-actions{
     background-color: aqua;
 }
-
-.debug .users-container{
+ */
+/* .debug .users-container{
     
     background-color: orange;
-}
+} */
 
-.debug .row{
+/* .debug .row{
     height: 20%;
     background-color: aquamarine;
-}
+} */
 
-.debug .user-card{    
+/* .debug .user-card{    
     background-color: red;
     border: 1px solid black;
 }
-
+ */
 .debug .users-container{    
     height: 90%;
 }
@@ -81,26 +82,30 @@ img{
     display: flex;
     justify-content: end;
     font-size: 1.2rem;
+    padding: 1% 0;
 }
 
 .speaker-view, .open-view{
-    border: 1px solid green;
+    background-color: var(--bool-dark);
     margin-right: 0.5rem;
+    color: var(--bool-lighter);
+    padding: 0.3rem;
+    border-radius: 5px;
 }
-
-
-
 
 .users-container{
     width: 90%;
     margin: auto;
+    padding: 2rem 0;    
 }
 
 .row{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 0.2rem;    
+    gap: 0.4rem;
+    height: calc(100% / 5);
+    padding: 0.3rem;
 }
 
 .user-card{
@@ -112,5 +117,7 @@ img{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: blue;
+    background-color: var(--bool-dark-sheer);
+    color: var(--bool-lighter);
+    padding: 1.5%;
 }
